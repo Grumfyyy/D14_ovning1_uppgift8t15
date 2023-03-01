@@ -10,7 +10,9 @@
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Land sverige = new Land() { namn = "Sverige", styrestyp = "Monarki", huvudstad = "Stockholm", invånarantal = 10512820 };
+            Land tyskland = new Land() { namn = "Sverige", styrestyp = "Republik", huvudstad = "Berlin", invånarantal = 83783902 };
+            Land sanMarino = new Land() { namn = "San Marino", styrestyp = "Republik", huvudstad = "San Marino", invånarantal = 33600 };
         }
     }
 }
