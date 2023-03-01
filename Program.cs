@@ -21,7 +21,7 @@
         {
             //Uppgift 9
             Land sverige = new Land() { namn = "Sverige", styrestyp = "Monarki", huvudstad = "Stockholm", invånarantal = 10512820 };
-            Land tyskland = new Land() { namn = "Sverige", styrestyp = "Republik", huvudstad = "Berlin", invånarantal = 83783902 };
+            Land tyskland = new Land() { namn = "Tyskland", styrestyp = "Republik", huvudstad = "Berlin", invånarantal = 83783902 };
             Land sanMarino = new Land() { namn = "San Marino", styrestyp = "Republik", huvudstad = "San Marino", invånarantal = 33600 };
 
             //Uppgift 10
@@ -36,7 +36,13 @@
                 new Land() { namn = "Italien", styrestyp = "Republik", huvudstad = "Rom", invånarantal = 58853482 },
                 new Land() { namn = "Tjeckien", styrestyp = "Republik", huvudstad = "Prag", invånarantal = 10551219 },
                 new Land() { namn = "Rumänien", styrestyp = "Republik", huvudstad = "Bukarest", invånarantal = 19760314 }
-            }; 
+            };
+
+            //Uppgift 12
+            foreach(Land land in länder)
+            {
+                land.Print();
+            }
         }
     }
 }
