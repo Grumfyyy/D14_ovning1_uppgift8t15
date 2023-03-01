@@ -39,9 +39,18 @@
             };
 
             //Uppgift 12
-            foreach(Land land in länder)
+            /*foreach(Land land in länder)
             {
                 land.Print();
+            }*/
+
+            //Uppgift 13
+            for (int i = 0; i < länder.Length; i++)
+            {
+                if (länder[i].styrestyp == "Republik")
+                {
+                    länder[i].Print();
+                }
             }
         }
     }
