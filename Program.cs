@@ -45,13 +45,24 @@
             }*/
 
             //Uppgift 13
-            for (int i = 0; i < länder.Length; i++)
+            /*for (int i = 0; i < länder.Length; i++)
             {
                 if (länder[i].styrestyp == "Republik")
                 {
                     länder[i].Print();
                 }
+            }*/
+
+            //Uppgift 14
+            for (int i = 0; i < länder.Length; i++)
+            {
+                if (länder[i].styrestyp == "Republik")
+                {
+                    länder[i].Print();
+                    Console.WriteLine($"Index : {i}");
+                }
             }
+
         }
     }
 }
