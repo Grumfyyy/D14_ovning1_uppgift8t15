@@ -54,15 +54,48 @@
             }*/
 
             //Uppgift 14
-            for (int i = 0; i < länder.Length; i++)
+            /*for (int i = 0; i < länder.Length; i++)
             {
                 if (länder[i].styrestyp == "Republik")
                 {
                     länder[i].Print();
                     Console.WriteLine($"Index : {i}");
                 }
+            }*/
+
+            //Uppgift 15
+            int min = -1;
+            int max = -1;
+
+            for (int i = 0; i < länder.Length; i++)
+            {
+                if (länder[i].styrestyp == "Republik")
+                {
+                    if(min == -1)
+                    {
+                        min = i;
+                        max = i;
+                    }
+                    else
+                    {
+                        if (länder[i].invånarantal < länder[min].invånarantal)
+                        {
+                            min = i;
+                        }
+
+                        if (länder[i].invånarantal > länder[max].invånarantal)
+                        {
+                            max = i;
+                        }
+
+                    }
+                }
             }
 
+            Console.WriteLine("===== Republik med minsta invånarantal =====");
+            länder[min].Print();
+            Console.WriteLine("===== Republik med största invånarantal =====");
+            länder[max].Print();
         }
     }
 }
